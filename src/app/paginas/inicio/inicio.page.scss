@@ -1,0 +1,17 @@
+.botones{
+    height: 32%;
+    display: block;
+    justify-content: center;
+    --border-radius: 15px;
+    border-radius: 15px;
+    border: none !important;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    
+}
+.imagen{
+    background-color: transparent !important;
+    width: 150px;
+    height: 150px;
+}

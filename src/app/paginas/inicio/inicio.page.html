@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center;font-family:'Caviar Dreams Bold'">Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="LogOut()">
+        <ion-icon style="color: black" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="height-100">
+      <ion-button shape="round" expand="full" class="botones" style="--background:#8b0000" (click)="categoryClick('numeros')">
+        <img src="../../../assets/imgs/numeros/numeros.png" class="imagen"/>
+          
+        </ion-button>
+      <ion-button shape="round" expand="full" class="botones" style="--background:#006400" (click)="categoryClick('animales')">
+        <img src="../../../assets/imgs/animales/animales_2.png" class="imagen"/>
+          
+      </ion-button>
+      <ion-button shape="round" expand="full" class="botones" style="--background:#ff8c00" (click)="categoryClick('colores')">
+        <img src="../../../assets/imgs/colores/colores.png" class="imagen"/>
+          
+      </ion-button>
+
+  </div>
+
+</ion-content>

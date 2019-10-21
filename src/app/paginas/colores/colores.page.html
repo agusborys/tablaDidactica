@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary" style="--color:white">
+      <ion-buttons slot="start">
+          <ion-button (click)="goBack()">
+            <ion-icon  name="md-arrow-round-back" ></ion-icon> 
+          </ion-button>
+        </ion-buttons>
+    <ion-title style="font-family:'Caviar Dreams Bold'; text-align: center">  
+        <img *ngIf="this.selectedLanguage.abreviacion=='ar'" src="../../../assets/imgs/idiomas/espana.png" class="iconIdioma">
+          <img *ngIf="this.selectedLanguage.abreviacion=='en'" src="../../../assets/imgs/idiomas/reino-unido.png" class="iconIdioma">
+          <img *ngIf="this.selectedLanguage.abreviacion=='por'" src="../../../assets/imgs/idiomas/portugal.png" class="iconIdioma">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background:lightgrey">
+  <ion-fab horizontal="start" vertical="top" slot="fixed" >
+      <ion-fab-button color="primary">
+        <img src="../../../assets/icon/traduccion.png">
+      </ion-fab-button>
+      <ion-fab-list >
+        <ion-fab-button color="light" (click)="flagClick('ar')">
+          <img src="../../../assets/imgs/idiomas/espana.png">
+        </ion-fab-button>
+        <ion-fab-button color="light" (click)="flagClick('por')">
+          <img src="../../../assets/imgs/idiomas/portugal.png">
+        </ion-fab-button>
+        <ion-fab-button color="light" (click)="flagClick('en')">
+          <img src="../../../assets/imgs/idiomas/reino-unido.png">
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    <div class="height-100 allScreen">
+        <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:lightblue" 
+        (click)="itemSoundClick('assets/sonidos/colores/azul')">
+            <img src="../../../assets/imgs/colores/azul.png" class="imagenBtns"/>
+            </ion-button>
+          <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#fcef8f6c" 
+          (click)="itemSoundClick('assets/sonidos/colores/amarillo')">
+            <img src="../../../assets/imgs/colores/amarillo.png" class="imagenBtns"/>
+          </ion-button>
+          <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:lightsalmon" 
+          (click)="itemSoundClick('assets/sonidos/colores/naranja')">
+            <img src="../../../assets/imgs/colores/naranja.png" class="imagenBtns"/>
+          </ion-button>
+          <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:lightcoral" 
+          (click)="itemSoundClick('assets/sonidos/colores/rojo')">
+            <img src="../../../assets/imgs/colores/rojo.png" class="imagenBtns"/>
+          </ion-button>
+          <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:lightgreen" 
+          (click)="itemSoundClick('assets/sonidos/colores/verde')">
+            <img src="../../../assets/imgs/colores/verde.png" class="imagenBtns"/>
+          </ion-button>
+    </div>
+
+</ion-content>

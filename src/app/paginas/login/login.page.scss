@@ -1,0 +1,40 @@
+.inputs{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    background-color: #fcf7cb;   
+}
+.itemsBackground {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --highlight-height: 0 !important;
+  }
+.ingresar{
+    --border-radius: 50px 50px 50px 50px;
+    --border-style: 0px solid #000000;   
+    --background: #ff8f00;
+    --background-activated:#ff8f00; 
+    --background-hover:#fd9712;
+    --background-focused: #fd9712;
+    font-size: 15px; color: black;
+    height: 40px;
+}
+.imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 15px;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+  }
+  .titulo{
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    
+    font-family: 'Caviar Dreams Bold';
+    //font-weight: bolder;
+  
+  }

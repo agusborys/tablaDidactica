@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar color="primary" style="--color:white">
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+              <ion-icon name="md-arrow-round-back" ></ion-icon> 
+            </ion-button>
+          </ion-buttons>
+      <ion-title style="font-family:'Caviar Dreams Bold';text-align: center">  
+          <img *ngIf="this.selectedLanguage.abreviacion=='ar'" src="../../../assets/imgs/idiomas/espana.png" class="iconIdioma">
+          <img *ngIf="this.selectedLanguage.abreviacion=='en'" src="../../../assets/imgs/idiomas/reino-unido.png" class="iconIdioma">
+          <img *ngIf="this.selectedLanguage.abreviacion=='por'" src="../../../assets/imgs/idiomas/portugal.png" class="iconIdioma">
+      </ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content style="--background:#ffffd5">
+    <ion-fab horizontal="start" vertical="top" slot="fixed" >
+        <ion-fab-button color="primary">
+          <!-- <ion-icon name="ios-arrow-dropdown"></ion-icon> -->
+          <img src="../../../assets/icon/traduccion.png">
+        </ion-fab-button>
+        <ion-fab-list >
+          <ion-fab-button color="light" (click)="flagClick('ar')">
+            <img src="../../../assets/imgs/idiomas/espana.png">
+          </ion-fab-button>
+          <ion-fab-button color="light" (click)="flagClick('por')">
+            <img src="../../../assets/imgs/idiomas/portugal.png">
+          </ion-fab-button>
+          <ion-fab-button color="light" (click)="flagClick('en')">
+            <img src="../../../assets/imgs/idiomas/reino-unido.png">
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+      <div class="height-100 allScreen">
+          <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#607d8b" 
+          (click)="animalNameClick('assets/sonidos/animales/namegato')">
+              <img src="../../../assets/imgs/animales/gato.png" class="imagenBtns"/>
+              </ion-button>
+            <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#81c784" 
+            (click)="animalNameClick('assets/sonidos/animales/nameleon')">
+              <img src="../../../assets/imgs/animales/leon.png" class="imagenBtns"/>
+            </ion-button>
+            <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#42a5f5" 
+            (click)="animalNameClick('assets/sonidos/animales/namemono')">
+              <img src="../../../assets/imgs/animales/mono.png" class="imagenBtns"/>
+            </ion-button>
+            <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#ff8a65" 
+            (click)="animalNameClick('assets/sonidos/animales/nameperro')">
+              <img src="../../../assets/imgs/animales/perro.png" class="imagenBtns"/>
+            </ion-button>
+            <ion-button shape="round" expand="full" class="botonesCategorias" style="--background:#ba68c8" 
+            (click)="animalNameClick('assets/sonidos/animales/namecerdo')">
+              <img src="../../../assets/imgs/animales/cerdo.png" class="imagenBtns"/>
+            </ion-button>
+      </div>
+  
+  </ion-content>
+  

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="primaryBackground">
+    <ion-title style="text-align:center; font-family: 'Caviar Dreams Bold'">Iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="secondaryBackground">
+    <div class="imagen" style="margin-top: 15px">
+        <img class="imagen" src="../../../assets/icon/idiomas_3.png">
+    </div>
+    <div class="titulo">
+      <h1 style="font-size: 30px;">Tabla Didactica </h1>
+    </div>
+    <form>
+    <div >
+    <ion-card style="margin-top: 15px" class="primaryBackground">
+        <ion-card-content>      
+                  <ion-label style="font-size: 20px; color: black;" position="floating">Correo</ion-label>
+                  <div class="inputs">
+                    <ion-input style="color: black;font-size: 20px;" type="text" name="email"  [(ngModel)]="email" required></ion-input>
+                  </div>
+                <div style="margin-top: 15px">
+                  <ion-label style="font-size: 20px; color: black;" position="floating">Contraseña</ion-label>
+                  <ion-input style="color: black;font-size: 20px;" class="inputs" type="password"  name="password" [(ngModel)]="password" required></ion-input>
+                </div>
+                <ion-row>
+                    <ion-col>
+                      <ion-item class="itemsBackground">
+                        <ion-button fill="outline" class="ingresar" expand="block" (click)="abrirAlert()">Seleccionar Usuario</ion-button>
+                        <!-- <ion-label floating>Seleccionar Usuario</ion-label>
+                        <ion-select interface="popover" [(ngModel)]="userSelect" name="SelecUser" ok-text="Ok" cancel-text="Cancelar" [selectedText]="userSelect"  (ionChange)="SeleccionUsuario()" >
+                          <ion-select-option value="admin">Administrador</ion-select-option>
+                          <ion-select-option value="invitado">Invitado</ion-select-option>
+                          <ion-select-option value="usuario">Usuario</ion-select-option>
+                          <ion-select-option value="anonimo">Anónimo</ion-select-option>
+                          <ion-select-option value="tester">Tester</ion-select-option>
+                        </ion-select> -->
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-button class="ingresar" expand="block" (click)="Login()">Ingresar</ion-button>
+              
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </form>
+    
+</ion-content>
